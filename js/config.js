@@ -15,18 +15,20 @@ window.CONFIG = {
   telefon1_prikaz: "063 877 3363",
   telefon2: "+381658022270",
   telefon2_prikaz: "065 802 2270",
-  whatsapp: "381638773363",      // bez plusa i bez nula, format za wa.me
-  viber: "+381638773363",        // sa plusom
+  whatsapp: "381638773363", // bez plusa i bez nula, format za wa.me
+  viber: "+381638773363", // sa plusom
   email: "tonticlux@gmail.com",
   instagram: "https://www.instagram.com/tonticluxmilmari/",
-  infokop: "https://www.eng.infokop.net/accommodation-apartments-vikend-nas-kopaonik/apartments-tonticlux.html",
+  infokop:
+    "https://www.eng.infokop.net/accommodation-apartments-vikend-nas-kopaonik/apartments-tonticlux.html",
 
   /* ---- backend za formu ----
      Zalepiti /exec adresu Google Apps Script web aplikacije.
      Uputstvo: docs/uputstvo-google.md
      Dok ovde stoji GOOGLE_SCRIPT_URL_OVDE, forma se prebacuje na
      rezervni način slanja (otvara mejl program gosta). */
-  skripta: "GOOGLE_SCRIPT_URL_OVDE",
+  skripta:
+    "https://script.google.com/macros/s/AKfycbxKNdfD8B7twPtQWSY8pMBetSM0QFO4oSuPlN2VTt2y5jPHjbn7RJRO6tm-JPRChfTg/exec",
 
   /* ---- Booking.com ----
      ukljucen: false dok se ne dobije stvarna adresa objekta na Booking-u.
@@ -39,7 +41,7 @@ window.CONFIG = {
     nacin: "objekat",
     adresa: "BOOKING_ADRESA_OVDE",
     valuta: "EUR",
-    jezik: "sr"
+    jezik: "sr",
   },
 
   /* ---- mape ----
@@ -48,12 +50,12 @@ window.CONFIG = {
   mape: {
     residence_hill: {
       embed: "",
-      link: "https://www.google.com/maps/search/?api=1&query=Residence+Hill+Kopaonik"
+      link: "https://www.google.com/maps/search/?api=1&query=Residence+Hill+Kopaonik",
     },
     milmari: {
       embed: "",
-      link: "https://www.google.com/maps/search/?api=1&query=Milmari+Resort+Kopaonik"
-    }
+      link: "https://www.google.com/maps/search/?api=1&query=Milmari+Resort+Kopaonik",
+    },
   },
 
   /* ---- pravila boravka ---- */
@@ -64,10 +66,11 @@ window.CONFIG = {
     max_odraslih: 4,
     max_dece: 4,
     max_gostiju: 4,
-    otkazivanje: "Besplatno do 14 dana pre dolaska. Posle toga se naplaćuje pun iznos.",
+    otkazivanje:
+      "Besplatno do 14 dana pre dolaska. Posle toga se naplaćuje pun iznos.",
     ljubimci: false,
     depozit: false,
-    tisina: "od 21 do 8 časova"
+    tisina: "od 21 do 8 časova",
   },
 
   /* ---- vreme odgovora, koristi se u copy-ju ---- */
@@ -75,7 +78,7 @@ window.CONFIG = {
 
   /* ---- analitika (opciono) ----
      Uneti GA4 oznaku oblika G-XXXXXXX da bi se ukljucila. */
-  ga4: ""
+  ga4: "",
 };
 
 /* ==========================================================================
@@ -95,7 +98,8 @@ window.APARTMANI = [
     max_gostiju: 4,
     lezajevi: "Dva bračna kreveta",
     kupatila: 1,
-    kratko: "Trideset kvadrata sa dva pokretna pregradna zida, pa se prostor deli onako kako vam odgovara te večeri.",
+    kratko:
+      "Trideset kvadrata sa dva pokretna pregradna zida, pa se prostor deli onako kako vam odgovara te večeri.",
     razlika: "Pregradni zidovi",
     booking_adresa: "",
     slike: [
@@ -104,8 +108,8 @@ window.APARTMANI = [
       { fajl: "ap53-03.jpg", opis: "Kuhinja sa rernom i mašinom za sudove" },
       { fajl: "ap53-04.jpg", opis: "Kupatilo apartmana TonticLux 53" },
       { fajl: "ap53-05.jpg", opis: "Francuski balkon i pogled na prirodu" },
-      { fajl: "ap53-06.jpg", opis: "Detalj enterijera" }
-    ]
+      { fajl: "ap53-06.jpg", opis: "Detalj enterijera" },
+    ],
   },
   {
     slug: "tonticlux-54",
@@ -118,7 +122,8 @@ window.APARTMANI = [
     max_gostiju: 4,
     lezajevi: "Dva bračna kreveta",
     kupatila: 1,
-    kratko: "Isti raspored kao broj 53, na istom spratu. Kada se uzmu zajedno, dva apartmana primaju osam osoba.",
+    kratko:
+      "Isti raspored kao broj 53, na istom spratu. Kada se uzmu zajedno, dva apartmana primaju osam osoba.",
     razlika: "Vrata do broja 53",
     booking_adresa: "",
     slike: [
@@ -127,8 +132,8 @@ window.APARTMANI = [
       { fajl: "ap54-03.jpg", opis: "Kuhinja apartmana TonticLux 54" },
       { fajl: "ap54-04.jpg", opis: "Kupatilo apartmana TonticLux 54" },
       { fajl: "ap54-05.jpg", opis: "Francuski balkon i pogled na prirodu" },
-      { fajl: "ap54-06.jpg", opis: "Detalj enterijera" }
-    ]
+      { fajl: "ap54-06.jpg", opis: "Detalj enterijera" },
+    ],
   },
   {
     slug: "tonticlux-milmari",
@@ -141,18 +146,22 @@ window.APARTMANI = [
     max_gostiju: 4,
     lezajevi: "Bračni krevet i ležaj na razvlačenje",
     kupatila: 1,
-    kratko: "Dve odvojene sobe i pet kvadrata više. Prvi sprat, do njega se stiže bez lifta. Spa centar je u istom kompleksu.",
+    kratko:
+      "Dve odvojene sobe i pet kvadrata više. Prvi sprat, do njega se stiže bez lifta. Spa centar je u istom kompleksu.",
     razlika: "Dve odvojene sobe",
     booking_adresa: "",
     slike: [
-      { fajl: "milmari-01.jpg", opis: "Dnevna soba apartmana TonticLux Milmari" },
+      {
+        fajl: "milmari-01.jpg",
+        opis: "Dnevna soba apartmana TonticLux Milmari",
+      },
       { fajl: "milmari-02.jpg", opis: "Spavaća soba sa bračnim krevetom" },
       { fajl: "milmari-03.jpg", opis: "Kuhinja apartmana TonticLux Milmari" },
       { fajl: "milmari-04.jpg", opis: "Kupatilo apartmana TonticLux Milmari" },
       { fajl: "milmari-05.jpg", opis: "Balkon sa pogledom na planinu" },
-      { fajl: "milmari-06.jpg", opis: "Ležaj na razvlačenje" }
-    ]
-  }
+      { fajl: "milmari-06.jpg", opis: "Ležaj na razvlačenje" },
+    ],
+  },
 ];
 
 /* Oprema je ista u sve tri jedinice, pa stoji na jednom mestu. */
@@ -164,5 +173,5 @@ window.OPREMA = [
   "Besplatan bežični internet",
   "Televizor",
   "Sef",
-  "Posteljina i peškiri"
+  "Posteljina i peškiri",
 ];

@@ -45,6 +45,9 @@ Ovo se radi jednom, traje oko 15 minuta. Potreban je Google nalog vlasnika
      tabelu nikome, samo prima podatke.)
 4. Kliknite `Deploy`, pa prekopirajte adresu koja se završava na `/exec`.
 
+// Deployment ID - AKfycbxKNdfD8B7twPtQWSY8pMBetSM0QFO4oSuPlN2VTt2y5jPHjbn7RJRO6tm-JPRChfTg
+// URL - https://script.google.com/macros/s/AKfycbxKNdfD8B7twPtQWSY8pMBetSM0QFO4oSuPlN2VTt2y5jPHjbn7RJRO6tm-JPRChfTg/exec
+
 ## 5. Povežite sajt
 
 1. Otvorite `js/config.js`.
